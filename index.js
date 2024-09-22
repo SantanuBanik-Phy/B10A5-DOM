@@ -23,13 +23,24 @@ function getInputValueById(id) {
    
     
     const initalDonte = getDonetMoneyById("initial-value");
+    if(giveDonate <= 0 || isNaN(giveDonate)){
+        return alert("Please enter valid amount");
+        
+    }
    
 
     const totalDonation = giveDonate + initalDonte;
 
+   
+
         document.getElementById("initial-value").innerHTML = totalDonation;
 
         const amount = getDonetMoneyById("amount");
+        if(giveDonate > amount ){
+            return alert('Given amount can not be greater than wallet amount');
+        }
+        
+        
 
         const totalExpense = amount - giveDonate ;
         document.getElementById("amount").innerHTML = totalExpense;
