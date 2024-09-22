@@ -83,3 +83,11 @@ function getInputValueById(id) {
 
 
 
+  //blog html enter and back to home  
+  document.getElementById('blog').addEventListener('click',function () {
+    window.location.href = "blog.html";
+  })
+  
+
+
+
