@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Bangladesh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+     
+    tailwind.config = {
+           theme: {
+               extend: {
+                   colors: {
+                       
+                       primary: '#1dd100',
+                       secondary: '#111111',
+                       navColor: 'rgb(249, 247, 243);',
+                       buttonColor: 'rgb(180, 244, 97)',
+                   },
+                   fontFamily: {
+                       Lexend : 'Lexend',
+                       Sans: 'sans-serif'
+                   },
+               },
+           },
+       }
+   </script>
+
+</head>
+<body class="font-Lexend">
+    <header class="bg-navColor">
+        <nav class="flex justify-between items-center py-5 relative w-11/12 mx-auto ">
+            <div class="">
+                <button class="btn btn-primary bg-buttonColor text-secondary border-buttonColor  hover:border-buttonColor hover:text-primary hover:bg-transparent">
+                    <span>Blog</span>
+                </button>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <img src="assets/logo.png" alt="">
+                <h1 class="text-xl font-bold ">Donate Bangladesh</h1>
+            </div>
+
+            <div class="flex items-center gap-1">
+                <img src="assets/coin.png" alt="">
+                <p>5500 <span>BDT</span></p>        
+            </div>
+
+            </nav>
+       
+    </header>
+    <main class="w-11/12 mx-auto ">
+        <section class="">
+               <!-- Tabs for Donate and History -->
+        <div class="flex justify-center gap-5 mt-14 mb-14">
+            <button
+              id="donate-tab"
+              class="w-[157px] py-2 rounded-l-md  duration-200 text-secondary btn
+               bg-buttonColor" 
+            >
+              Donatation
+            </button>
+            <button
+              id="history-tab"
+              class="w-[157px] py-2 rounded-r-md border-2 rounded-md transition-colors duration-200 text-gray-600 font-semibold"
+            >
+              History
+            </button>
+          </div>
+        </section>
+    </main>
+
+
+
+<script src="index.js"></script>
+</body>
+
+
+</html>
