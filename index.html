@@ -35,20 +35,20 @@
     <header class=" sticky top-0 z-50 bg-white bg-transparent bg-opacity-50 backdrop-blur-md">
         <div class="bg-navColor">
         <nav class="flex justify-between items-center py-5 relative w-11/12 mx-auto ">
-            <div class="">
+            <div>
                 <button id="blog" class="btn btn-primary bg-buttonColor text-secondary border-buttonColor  hover:border-buttonColor hover:text-primary hover:bg-transparent">
                     <span>Blog</span>
                 </button>
             </div>
 
             <div class="flex items-center gap-4">
-                <img src="assets/logo.png" alt="">
-                <h1 class="text-xl font-bold ">Donate Bangladesh</h1>
+                <img src="assets/logo.png" alt="" class="w-8 h-8 md:w-12 md:h-12">
+                <h1 class="md:text-xl font-bold ">Donate Bangladesh</h1>
             </div>
 
             <div class="flex items-center gap-1">
-                <img src="assets/coin.png" alt="">
-                <p id="balance">5500 <span>BDT</span></p>        
+                <img src="assets/coin.png" alt="" class="w-5 h-5 md:w-8 md:h-8">
+                <p id="balance" class="md:text-xl">5500 <span class="font-semibold md:text-xl text-[#111111B3]">BDT</span></p>        
             </div>
 
             </nav>
@@ -57,14 +57,14 @@
          <div class="flex justify-center gap-5 mt-14 mb-14">
              <button
                id="donate-tab"
-               class="w-[157px] py-2 rounded-l-md  text-secondary btn
+               class="md:w-[157px] w-[120px] py-2 rounded-l-md  text-secondary btn
                 bg-buttonColor" 
              >
                Donatation
              </button>
              <button
                id="history-tab"
-               class="w-[157px] py-2 rounded-r-md rounded-md transition-colors duration-200 text-gray-600 font-semibold border"
+               class="md:w-[157px] w-[120px] py-2 rounded-r-md rounded-md transition-colors duration-200 text-gray-600 font-semibold border"
              >
                History
              </button>
@@ -76,14 +76,14 @@
        
 
        
-        <section id="donation-section" class="space-y-7">
+        <section id="donation-section" class="space-y-7 md:w-11/12 mx-auto w-4/5">
             <!-- Nokahali donate form start -->
-            <div class="lg:flex justify-center border rounded-md shadow-sm p-6 w-11/12 mx-auto">
-                <div class="w-1/2">
+            <div class="md:flex justify-center border rounded-md shadow-sm p-6 ">
+                <div class="md:w-1/2 w-full">
                     <img src="assets/noakhali.png" alt="" class="w-auto h-auto">
                 </div>
-                <div class="w-1/2 space-y-4 ">
-                    <button class="btn">
+                <div class="md:w-1/2 w-full space-y-4 ">
+                    <button class="btn mt-3 md:mt-0">
                         <img src="assets/coin.png" alt="" class="">
                         <p id="nk-value" class="text-gray-500">0 <span class="text-gray-500">BDT</span></p>
                     </button>
@@ -100,12 +100,12 @@
             <!-- Noakhali  donate form end -->
 
              <!-- Feni donate form start -->
-             <div class="lg:flex justify-center border rounded-md shadow-sm  w-11/12 mx-auto p-6">
-                <div class="w-1/2">
+             <div class="lg:flex justify-center border rounded-md shadow-sm  p-6">
+                <div class="md:w-1/2 w-full">
                     <img src="assets/feni.png" alt="" class="w-auto h-auto">
                 </div>
-                <div class="w-1/2 space-y-6">
-                    <button class="btn">
+                <div class="md:w-1/2 w-full space-y-6">
+                    <button class="btn mt-3 md:mt-0">
                         <img src="assets/coin.png" alt="" class="">
                         <p id="feni-value" class="text-gray-500">600 <span class="text-gray-500">BDT</span></p>
                     </button>
@@ -122,12 +122,12 @@
     
                <!-- Feni donate donate form end -->
 
-               <div class="lg:flex justify-center border rounded-md shadow-sm p-6 w-11/12 mx-auto">
-                <div class="w-1/2">
+               <div class="md:flex justify-center border rounded-md shadow-sm p-6 w-11/12 mx-auto">
+                <div class="md:w-1/2 w-full">
                     <img src="assets/quota-protest.png" alt="" class="w-auto h-auto">
                 </div>
-                <div class="w-1/2">
-                    <button class="btn mb-6">
+                <div class="md:w-1/2 w-full">
+                    <button class="btn mb-6 mt-3 md:mt-0">
                         <img src="assets/coin.png" alt="" class="">
                         <p id="quota-value" class="text-gray-500">2400 <span class="text-gray-500">BDT</span></p>
                     </button>

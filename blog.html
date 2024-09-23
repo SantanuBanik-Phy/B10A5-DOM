@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://kit.fontawesome.com/3ff6926740.js" crossorigin="anonymous"></script>
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
      
@@ -55,37 +56,58 @@
     </header>
     <main class="w-11/12 mx-auto ">
             <section class="mt-10">
+              <div class="flex gap-2 justify-center md:justify-start">
                 <h1 class="text-4xl font-bold ">
                     Importand FAQ
                 </h1>
+                <i class="fa-regular fa-circle-question text-4xl "></i>
+              </div>
 
                 <div class="collapse collapse-arrow bg-base-200 mt-5 mb-5">
                     <input type="radio" name="my-accordion-2" checked="checked" />
-                    <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-                    <div class="collapse-content">
-                      <p>hello</p>
+                    <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                    <div class="collapse-content text-gray-600">
+                      <p>The Document Object Model (DOM) is a way for web browsers to understand and work with HTML documents,the DOM is like a bridge between a webpage's content and JavaScript, enabling dynamic and interactive web pages.</p>
                     </div>
                   </div>
                   <div class="collapse collapse-arrow bg-base-200 mb-5">
                     <input type="radio" name="my-accordion-2" />
-                    <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                    <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
                     <div class="collapse-content">
-                      <p>hello</p>
+                      <p>There are many ways to select an element from DOM,these are: <br>
+                        <ul>
+                            <li>1.getElementById()</li>
+                            <li>2.querySelector()</li>
+                            <li>3.getElementsByTagName()</li>
+                            <li>4.getElementsByClassName()</li>
+                            <li>5.querySelectorAll()</li>
+                           
+                        </ul>
+                    </p>
                     </div>
                   </div>
                  
                   <div class="collapse collapse-arrow bg-base-200 mb-5">
                     <input type="radio" name="my-accordion-2" />
-                    <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                    <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
                     <div class="collapse-content">
-                      <p>hello</p>
+                      <p>Event delegation is a technique where attach a single event listener to a parent element to handle events on its child elements, instead of adding multiple listeners to each child. It works due to event bubbling, where events propagate up the DOM tree. This method is useful because it improves performance by reducing the number of event listeners and simplifies handling dynamically added elements. It's efficient for managing events in large or dynamic DOM structures.</p>
                     </div>
                   </div>
                   <div class="collapse collapse-arrow bg-base-200 mb-5">
                     <input type="radio" name="my-accordion-2" />
-                    <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                    <div class="collapse-title text-xl font-medium">How do you manipulate an element's attribute and styles using the DOM?</div>
                     <div class="collapse-content">
-                      <p>hello</p>
+                      <p>There are many ways to manipulate an element's attributes and styles using the DOM:
+                        <ul>
+                            <li>1.setAttribute()</li>
+                            <li>2.getAttribute()</li>
+                            <li>3.removeAttribute()</li>
+                        </ul>
+                        <p>For style:</p>
+                        <p>Directly set the 'style' property of an element</p>
+                        <p>Use the 'classList' property to add, remove, or toggle classes</p>
+                      </p>
                     </div>
                   </div>
             </section>
