@@ -79,8 +79,6 @@ quotaBtn.addEventListener('click',function(){
   //blog html enter and back to home  
   document.getElementById('blog').addEventListener('click',function () {
     window.location.href = "blog.html";
-
-
   })
   
 
