@@ -12,7 +12,7 @@ function calculate(inputDonate,balance,locationBalance,id,areaTitle){
     //validation
 
 
-     if(inputDonate < 1 || isNaN(inputDonate)  ){
+     if(inputDonate === '' || inputDonate < 1 || isNaN(inputDonate)){
         alert('Donation Amount Invalid!  Please enter a valid Amount')
     }
     else if(balance < inputDonate){
