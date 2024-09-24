@@ -1,29 +1,25 @@
-function getInputValue(id){
-    return parseFloat(document.getElementById(id).value);
+function getInputValue(id) {
+    return document.getElementById(id).value.trim(); 
+}
+function getBalance(id) {
+    return parseFloat(document.getElementById(id).innerText); 
 }
 
-function getBalance(id){
-    return parseFloat(document.getElementById(id).innerText);
-}
-
-
-function calculate(inputDonate,balance,locationBalance,id,areaTitle){
-
-    //validation
-
-
-     if(inputDonate === '' || inputDonate < 1 || isNaN(inputDonate)){
-        alert('Donation Amount Invalid!  Please enter a valid Amount')
-    }
-    else if(balance < inputDonate){
-        
-        alert("You Don't Have Enough Balance!")
-    }
-    else{
-        my_modal_1.showModal();
-        document.getElementById(id).innerText = (locationBalance + inputDonate).toFixed(2);
-        document.getElementById('balance').innerText = (balance - inputDonate).toFixed(2);
-        history(inputDonate,areaTitle);
+function calculate(inputDonateStr, balance, locationBalance, id, areaTitle) {
+    // check if the inputDonateStr is a valid number
+    if (inputDonateStr === '' || isNaN(inputDonateStr) || parseFloat(inputDonateStr) < 1 || inputDonateStr.toString() !== inputDonateStr.trim()) {
+        alert('Donation Amount Invalid! Please enter a valid Amount');
+    } else {
+        const inputDonate = parseFloat(inputDonateStr); 
+        // Check if balance is less than inputDonate
+        if (balance < inputDonate) {
+            alert("You Don't Have Enough Balance!");
+        } else {
+            my_modal_1.showModal();
+            document.getElementById(id).innerText = (locationBalance + inputDonate).toFixed(2);
+            document.getElementById('balance').innerText = (balance - inputDonate).toFixed(2);
+            history(inputDonate, areaTitle);
+        }
     }
 }
 function history(inputDonate,areaTitle){
